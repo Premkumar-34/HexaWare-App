@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Recruit</title>
+    <link rel="icon" type="image/x-icon" href="ByteMinds.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style type="text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: rgb(53, 47, 48); font-family: calibri; padding-right: 15px;padding-left: 15px;
+            position: fixed; top: 0; width: 98%; z-index: 100;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+		
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+            float: inline-start;
+			font-size: 35px; font-weight: 600; color: white; text-shadow: 2px 2px 5px black;
+		}
+
+        .logo img{
+            width: 60px; height: 60px;
+            
+        }
+
+		li{
+			list-style: none; display: inline-block; padding: 10px;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px; width:20px; padding: 10px; text-shadow: 2px 2px 5px black;
+		}
+		button{
+			background-color: rgb(0, 0, 0); transition: 0.5s; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+        button:hover{
+            background-color: rgb(83, 81, 81);
+            transform: scale(1.1);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+	</style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <img src="..\images\ByteMinds.png" >
+                <a href="home.html">NextGen Recruit -</a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>  
+                <li><a href="#feat">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <button><a href="login.html">Login</a></button>
+                <button><a href="register.html">Register</a></button>
+            </ul>
+        </div>
+    </nav> </header>
+
+    <section class="hero">
+        <div class="contain">
+            <h2>Find Your Next Great Talent Effortlessly</h2>
+            <p>Our NextGen Recruit uses advanced AI to help you find the best candidates faster and smarter.</p>
+        </div>
+    </section>
+            <div class="fe" id="feat">
+                <h2>Features</h2>
+                <div class="row">
+                <div class="box" id="box1">
+                    <h3>AI-Powered Search</h3>
+                    <p>
+                        Our NextGen Recruitlication leverages cutting-edge artificial intelligence to streamline your hiring process. The AI-powered search functionality enables recruiters to quickly find the most suitable candidates by analyzing resumes and profiles against job requirements.
+                    </p>
+                </div>
+                <div class="box" id="box2">
+                    <h3>Seamless Integration</h3>
+                    <p>Designed with flexibility in mind, our application seamlessly integrates with existing HR systems and tools. Whether you use an Applicant Tracking System (ATS), HR management software, or other recruitment platforms, our NextGen Recruitlication can connect and synchronize data effortlessly.</p>
+                </div>
+                <div class="box" id="box3">
+                    <h3>Advanced Analytics</h3>
+                    <p>Make informed decisions with our advanced analytics features. The application offers detailed insights into various aspects of the recruitment process, such as candidate sourcing, application trends, and hiring metrics. With customizable dashboards and reports, you can track key performance indicators, identify bottlenecks, and optimize your recruitment strategy.</p>
+                </div>
+            </div>
+            </div>
+        
+    <section class="empty"></section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p id="center-text">
+            The NextGen Recruit is designed to streamline and enhance the recruitment process for both on-campus and off-campus scenarios.Our 
+            goal is to empower HR departments with a comprehensive tool that simplifies job posting, application tracking, interview scheduling, 
+            and communication with candidates. With our software, HR teams can efficiently manage the entire recruitment lifecycle, ensuring that 
+            the best talent is identified and brought on board seamlessly. Our commitment is to provide a user-friendly, effective solution that 
+            meets all the business requirements for modern recruitment challenges.
+        </p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NextGen Recruit. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

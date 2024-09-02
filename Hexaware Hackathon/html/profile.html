@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Smart Recruiting App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the common CSS file -->
+    <style>
+        /* Super and Interactive CSS Styles */
+
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        .main-content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .profile h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            color: #007BFF;
+            text-transform: uppercase;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        .profile p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .profile p strong {
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 50px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            .main-content {
+                padding: 15px;
+            }
+
+            .profile h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Profile</h1>
+        <nav>
+            <ul>
+                <!-- <li><a href="profile.html">Profile</a></li> -->
+                <li><a href="job-postings.html">Job Postings</a></li>
+                <li><a href="applications.html">My Applications</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="../html/home.html">Logout</a></li>
+                <li><a href="dashboard.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="profile">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Prem Kumar</p>
+            <p><strong>Email:</strong> pk1534007@gmail.com</p>
+            <!-- <p><strong>Phone:</strong> +1 234 567 890</p> -->
+            <!-- <p><strong>Address:</strong> 123 Main Street, Anytown, USA</p> -->
+            
+            <!-- <h2>Professional Information</h2>
+            <p><strong>Current Position:</strong> Software Engineer</p>
+            <p><strong>Skills:</strong> Java, Spring Boot, SQL, JavaScript</p>
+            <p><strong>Experience:</strong> 5 years in software development</p> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NextGen Recruit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
